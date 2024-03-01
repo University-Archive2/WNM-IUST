@@ -1,0 +1,12 @@
+# curve PDR vs Pause Time
+
+set key left bottom
+set title "PDR VS PT"
+set xlabel "pt"
+set ylabel "PDR"
+# set yrange [0:1]
+
+# set term postscript eps enhanced color "Times-Roman" 23
+# set output "PDR_PT.eps"
+
+plot "pdr_res" using 1:2:3 t "PDR" with yerrorlines
